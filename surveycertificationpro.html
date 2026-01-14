@@ -1,0 +1,57 @@
+!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">Student Survey Form</h1>
+    <p id="description">This form is designed to collect your feedback and comments,which will be considered by us to improve our service</p>
+    <form id="survey-form">
+      
+      <label for="name" id="name-label">Name:</label>
+      <input required type="text" id="name" placeholder="enter you name" name="name"/>
+      
+      <label for="email" id="email-label">Email:</label>
+      <input type="email" id="email" required placeholder="enter your email" />
+      
+      <label for="number" id="number-label">Age:</label>
+      <input id="number" type="number" placeholder="age" min="18" max="60"/>
+      <label for="dropdown">How was your exam?</label>
+      <select id="dropdown">
+        <option name="good">Good</option>
+        <option name="not-bad">Not Bad</option>
+        <option name="excellent">Excellent</option>
+      </select>
+      <fieldset>
+        <legend>Wanna to improve your Computer knowledge?</legend>
+        <input type="radio" id="yes" name="select-one" value="yes-option" />
+        <label for="yes">Yes</label>
+        <input type="radio" id="no" name="select-one" value="no-option"/>
+        <label for="no">No</label>
+      </fieldset>
+      <fieldset>
+        <legend>Courses you can choose from...</legend>
+        <input type="checkbox" id="html" value="html"/>
+        <label for="choice">HTML</label>
+        <input type="checkbox" id="css" value="css"/>
+        <label for="choice">CSS</label>
+        
+        <input type="checkbox" id="ms" value="ms"/>
+        <label for="choice">MICROSOFT OFFICE</label>
+        <input type="checkbox" id="python" value="python"/>
+        <label for="choice">PYTHON</label>
+        <input type="checkbox" id="db" value="db"/>
+        <label for="choice">DATABASE</label>
+      </fieldset>
+      <fieldset>
+        <legend>Your feedback about the intro class</legend>
+        <textarea>other comments
+        
+        </textarea>
+      </fieldset>
+      <button id="submit">Submit</button>
+    </form>
+  </body>
+</html>
