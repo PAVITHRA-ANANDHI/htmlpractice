@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Checkout Page</title>
+</head>
+
+<body>
+   <h1>Checkout</h1>
+   <section>
+      <h2>Your Cart</h2>
+      <img src="https://cdn.freecodecamp.org/curriculum/labs/cube.jpg" alt="An unsolved Cube"/>
+   </section>
+   
+    <section>
+       <h2>Payment Information</h2>
+       <h3>Credit/Debit/ATM Card</h3>
+       <form>
+           <label for="card-name">Card Holder Name:
+               <span aria-hidden="true">*</span>
+           </label>
+           <input required id="card-name" name="card-name" type="text"/>
+           <label for="card-number">Card Number:
+                <span aria-hidden="true">*</span>
+           </label>
+           <input required id="card-number" name="card-number" type="text" aria-describedby="card-number-help"/>
+           <p id="card-number-help">
+               Please enter your 16 didgit card number  
+           </p>
+           <label for="cv">CV:
+               <span aria-hidden="true">*</span>
+           </label>
+           <input required id="cv" type="number" name="number"/>
+           
+       </form>
+      
+        <h2>Address</h2>
+
+            <form>
+                <label for="name">Name:
+                   <span aria-hidden="true">*</span> 
+                </label>
+                <input required id="name" name="name" type="text" placeholder="eg.Kavitha"/>
+                <label for="address">Address:
+                    <span aria-hidden="true">*</span>
+                </label>
+                <textarea required id="address" name="address" type="text" size="50">
+                    
+                </textarea>
+            </form>
+       
+   
+       
+    </section>
+    
+</body>
+
+</html>
